@@ -26,6 +26,16 @@ class Dice {
 	 */
 	private $instances = [];
 
+	public function add(string|object $alias, ?object $obj = null) {
+		$copy = clone $this;
+		if (is_object($alias)) {
+			$obj = $alias;
+			$alias = get_class($obj);
+		}
+		$copy->instances[$alias] = $obj;
+		return $copy;
+	}
+
 	/**
 	 * Add a rule $rule to the class $name
 	 * @param string $name The name of the class to add the rule for
