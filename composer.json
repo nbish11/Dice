@@ -1,5 +1,5 @@
 {
-    "name": "level-2/dice",
+    "name": "nbish11/dice",
     "description": "A minimalist Dependency injection container (DIC) for PHP. Please note: 3.0+ is only compatible with PHP 7.0. The 2.0 branch is compatbile with PHP 5.6.",
     "license": "BSD-2-Clause",
     "homepage": "http://r.je/dice.html",
