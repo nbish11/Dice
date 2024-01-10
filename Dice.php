@@ -32,7 +32,7 @@ class Dice {
 			$obj = $alias;
 			$alias = get_class($obj);
 		}
-		$copy->instances[$alias] = $obj;
+		$copy->instances[ltrim(strtolower($alias), '\\')] = $obj;
 		return $copy;
 	}
 
